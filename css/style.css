@@ -15,7 +15,7 @@ span {
   display: none;
 }
 
-@media screen and (min-width:670px) {
+/* @media screen and (min-width:670px) { */
   .mobile {
     display: none;
   }
@@ -1161,5 +1161,13 @@ span {
       margin-top: 30%;
       margin-left: 80%;
     }
+  }
+/* } */
+
+@media screen and (max-width:640px) {
+  h1,
+  h2,
+  span {
+    font-size: 48px;
   }
 }
