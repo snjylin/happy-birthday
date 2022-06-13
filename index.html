@@ -17,6 +17,7 @@
     .postcard {
       height: 100vh;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       background:
@@ -31,6 +32,8 @@
     background-color: #ff3838;
     transform: translate(580%,-20%) rotate(45deg);
     cursor: pointer;
+    position: absolute;
+    left: -200px;
     }
     .heart span {
       position: absolute;
@@ -64,6 +67,7 @@
     transform: translateX(-50%);
     }
     .card {
+    position: relative;
     width: 0;
     height: 0;
     border-top: 100px solid #eee;
@@ -76,7 +80,7 @@
     border-left: 170px solid #ccc;
     }
     #btn_full_scr {
-      margin-top: 300px;
+      margin-top: 50px;
       font-size: 20px;
       text-align: center;
     }
@@ -86,9 +90,10 @@
   </style>
 </head>
 <body>
-  <div class="postcard">
-    <div class="heart" id="open"><span>OPEN</span></div>
-    <div class="card"></div>
+  <div class="postcard">    
+    <div class="card">
+      <div class="heart" id="open"><span>OPEN</span></div>
+    </div>
     <div id="btn_full_scr">—— ALAN 亲启</div>
   </div>
   <iframe src="html/cake.html" width="100%" height="100%" frameborder="0"></iframe>
