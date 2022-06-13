@@ -1170,4 +1170,8 @@ span {
   span {
     font-size: 48px;
   }
+  .cake-wrapper {
+    position: relative;
+    top: 140px;
+  }
 }
